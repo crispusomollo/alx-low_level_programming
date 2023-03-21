@@ -2,24 +2,29 @@
 
 /**
  * main - main block
- * Description: computes and prints even numbers less than 4,000,000
- * followed by a new line
+ * Description: print the first 50 fibonacci numbers
+ * starting with 1 and 2
  * Return: 0
  */
 
 int main(void)
 {
-	int a = 0, b = 1, c = 0;
-	int sum = 0;
+	int i = 0;
+	long int a = 0, b = 1, c;
 
-	while (c < 4000000)
+	while (i < 50)
 	{
 		c = a + b;
 		a = b;
 		b = c;
-		if (c % 2 == 0)
-			sum += c;
+		printf("%lu", c);
+
+		if (i < 49)
+		{
+			printf(", ");
+		}
+		i++;
 	}
-	printf("%i\n", sum);
+	putchar('\n');
 	return (0);
 }
