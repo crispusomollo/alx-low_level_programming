@@ -4,8 +4,7 @@
  * *_strdup - returns a pointer 
  * to a newly allocated space in memory
  * @str: string to be duplicated
- * Return: NULL if str = NULL 
- * else return the string on success
+ * Return: NULL if str = NULL else return the string
  */
 
 char *_strdup(char *str)
