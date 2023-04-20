@@ -2,16 +2,16 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - sum of all given parameters
- * 
- * @n: the number of parameters
- * Return: sum
+ * sum_them_all - returns sum of all of its
+ * parameters
+ * @n: number of parameter
+ * Return: the resulting sum
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list list;
-	unsigned int a;
+	unsigned int x;
 	int sum = 0;
 
 	if (n == 0)
@@ -21,7 +21,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(list, n);
 
-	for (a = 0; a < n; a++)
+	for (x = 0; x < n; x++)
 	{
 		sum += va_arg(list, int);
 	}
