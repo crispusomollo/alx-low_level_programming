@@ -3,21 +3,21 @@
 
 /**
 * print_list - print the contents of a list
-* @p: pointer to a list
+* @h: pointer to a list
 * Return: number of nodes
 */
 
-size_t print_list(const list_t *p)
+size_t print_list(const list_t *h)
 {
 	size_t num_nodes = 0;
 
-	while (p)
+	while (h)
 	{
-		if (p->str)
-			printf("[%u] %s\n", p->len, p->str);
+		if (h->str)
+			printf("[%u] %s\n", h->len, h->str);
 		else
 			printf("[0] (nil)\n");
-		p = p->next;
+		h = h->next;
 		num_nodes++;
 	}
 
