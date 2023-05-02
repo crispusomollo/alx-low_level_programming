@@ -6,14 +6,14 @@
  * @head: list_t to be freed
  */
 
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *a;
+	listint_t *a;
 
 	while (head)
 	{
 		a = head->next;
-		free(head->str);
+/*		free(head->str); */
 		free(head);
 		head = a;
 	}
