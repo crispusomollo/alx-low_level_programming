@@ -8,9 +8,10 @@
  * Return: If the node does not exist - NULL.
  *         Otherwise - the address of the located node.
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int idx)
+
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	for (; idx != 0; idx--)
+	for (; index != 0; index--)
 	{
 		if (head == NULL)
 			return (NULL);
